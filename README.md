@@ -1,7 +1,8 @@
 # BiBop Memory Allocator
 
-## Project Overview
 This project is a custom memory allocator implemented in C/C++, designed to replace the standard `malloc` and `free` functions in linux system with a "Big Bag of Pages" (BiBoP) allocator. This allocator efficiently handles dynamic memory allocation requests by organizing memory into size-based blocks, allowing quick access, allocation, and deallocation. It also includes handling for both small and large memory requests to optimize memory usage and improve performance.
+
+## Features
 
 ### 1. **Efficient Allocation with Size Classes**
    - Memory is allocated in predefined size classes ranging from 16 to 2048 bytes. Each allocation request is rounded up to the nearest power of two, ensuring that memory is aligned and that allocations are organized for efficient reuse.
